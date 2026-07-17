@@ -1,0 +1,30 @@
+# ---- Secrets: NEVER commit these ----
+.env
+*.env
+!.env.example
+tokens.json
+tokens*.json
+*token*.json
+*secret*
+*.key
+*.pem
+
+# ---- Your personal plan data (keep it private / local) ----
+# The templates in meal-planner/templates/ are blank and SHOULD be committed.
+# Your filled-in copies live in a working folder outside the repo — see SETUP.md.
+my-plan/
+plans/
+
+# ---- Local runtime junk ----
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.uv/
+.npm-cache/
+npm-debug.log*
+.DS_Store
+.idea/
+.vscode/
+*.log

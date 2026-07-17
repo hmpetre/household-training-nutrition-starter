@@ -1,0 +1,73 @@
+{
+    "mcpServers": {
+        "whoop": {
+            "command": "node",
+            "args": [
+                "/Users/YOUR_USERNAME/Library/CloudStorage/<local path>"
+            ],
+            "env": {
+                "WHOOP_CLIENT_ID": "ac1d7013-9c6a-4d07-abb7-1cc9143da85e",
+                "WHOOP_CLIENT_SECRET": "89fa10347605352a78a7b710d5c96cb46469d2a2ffa95c94494c20b7c4688eb8",
+                "WHOOP_ACCESS_TOKEN": "5VwHu1SdAzCfV9GriB5AhbNS-knhoaDhuuf1tBMOtDM.TkRTFkAJk1vtRqZhg9FWu5rjXaS1ARQjHi5vpn6Ryfs",
+                "WHOOP_REFRESH_TOKEN": "dOOgAFeC5vsCWsmsDvHFIMtxObhpZ7TE40HLacQ90BI.w19hqaQDMRHuA5O13wv-u7m62vDH26fIFFkMO9XB1kU"
+            }
+        },
+        "trainingpeaks": {
+            "command": "/Users/YOUR_USERNAME/Library/CloudStorage/<local path>",
+            "args": [
+                "-m",
+                "tp_mcp",
+                "serve"
+            ]
+        },
+        "withings": {
+            "command": "/usr/local/bin/node",
+            "args": [
+                "/Users/YOUR_USERNAME/Library/CloudStorage/<local path>"
+            ]
+        }
+    },
+    "coworkUserFilesPath": "/Users/YOUR_USERNAME/Claude",
+    "preferences": {
+        "localAgentModeTrustedFolders": [
+            "/Users/YOUR_USERNAME/Library/CloudStorage/<local path>"
+        ],
+        "coworkScheduledTasksEnabled": true,
+        "coworkHipaaRestricted": false,
+        "ccdScheduledTasksEnabled": true,
+        "sidebarMode": "task",
+        "bypassPermissionsGateByAccount": {
+            "298aae71-e6bf-4900-bf04-ea855e8f2d42": false
+        },
+        "coworkWebSearchEnabled": true,
+        "coworkModelAutoFallbackByAccount": {
+            "298aae71-e6bf-4900-bf04-ea855e8f2d42": true
+        },
+        "remoteToolsDeviceName": "harrisons-macbook-air-local",
+        "epitaxyPrefs": {
+            "starred-local-code-sessions": [],
+            "starred-cowork-spaces": [],
+            "starred-session-groups": [],
+            "dframe-local-slice": {
+                "pinnedOrder": [],
+                "customGroupAssignments": {},
+                "customGroupOrder": {}
+            },
+            "desktop-frame.paneStore.v1": {
+                "state": {
+                    "extraPanesByMode": {},
+                    "colWeightsByMode": {},
+                    "rowSplit": 0.5,
+                    "draftNonce": 0
+                },
+                "version": 4
+            },
+            "ccd-sessions-filter": {
+                "state": {
+                    "selectedProjects": []
+                },
+                "version": 0
+            }
+        }
+    }
+}

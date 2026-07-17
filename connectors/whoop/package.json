@@ -1,0 +1,19 @@
+{
+  "name": "whoop-mcp",
+  "version": "1.0.0",
+  "description": "WHOOP v2 MCP server (stdio) for Claude Desktop / Cowork",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "whoop-mcp": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

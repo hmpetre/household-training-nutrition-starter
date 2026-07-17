@@ -1,0 +1,46 @@
+{
+  "_comment": "TEMPLATE — copy the blocks you need into your real Claude config at ~/Library/Application Support/Claude/claude_desktop_config.json. Replace YOUR_USERNAME and any tokens. Use ABSOLUTE paths. Find your node path with `command -v node` and your venv python at ~/mcp-servers/trainingpeaks/.venv/bin/python. NEVER commit your real config — it contains secrets. Make a backup before editing.",
+
+  "mcpServers": {
+
+    "whoop": {
+      "command": "/usr/local/bin/node",
+      "args": [
+        "/Users/YOUR_USERNAME/mcp-servers/whoop/whoop.js"
+      ],
+      "_note": "Point args at whichever file starts the WHOOP server (e.g. index.js or whoop.js). Credentials are read from the connector's .env; you can also inline them here as env vars.",
+      "env": {
+        "WHOOP_CLIENT_ID": "YOUR_WHOOP_CLIENT_ID",
+        "WHOOP_CLIENT_SECRET": "YOUR_WHOOP_CLIENT_SECRET",
+        "WHOOP_ACCESS_TOKEN": "FILLED_BY_AUTH",
+        "WHOOP_REFRESH_TOKEN": "FILLED_BY_AUTH"
+      }
+    },
+
+    "withings": {
+      "command": "/usr/local/bin/node",
+      "args": [
+        "/Users/YOUR_USERNAME/mcp-servers/withings/mcp/withings-mcp.js"
+      ],
+      "env": {
+        "WITHINGS_ENV_PATH": "/Users/YOUR_USERNAME/mcp-servers/withings/scripts/.env"
+      }
+    },
+
+    "trainingpeaks": {
+      "command": "/Users/YOUR_USERNAME/mcp-servers/trainingpeaks/.venv/bin/python",
+      "args": ["-m", "tp_mcp", "serve"]
+    },
+
+    "intervals_icu": {
+      "_note": "Only if you self-host an intervals.icu MCP. If you added intervals.icu as a hosted connector in Claude's settings instead, you do NOT need a block here.",
+      "command": "/usr/local/bin/node",
+      "args": ["/Users/YOUR_USERNAME/mcp-servers/intervals-icu/index.js"],
+      "env": {
+        "INTERVALS_ICU_API_KEY": "YOUR_API_KEY",
+        "INTERVALS_ICU_ATHLETE_ID": "iXXXXX"
+      }
+    }
+
+  }
+}
