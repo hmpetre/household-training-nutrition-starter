@@ -1,0 +1,8 @@
+{
+  "name": "ponytail",
+  "version": "0.1.0",
+  "description": "Lazy senior dev mode: solve the whole problem with the least new code, never cutting validation, security or tests.",
+  "author": { "name": "hmpetre" },
+  "license": "MIT",
+  "homepage": "https://github.com/DietrichGebert/ponytail"
+}
